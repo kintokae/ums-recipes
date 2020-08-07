@@ -55,8 +55,14 @@
           <key>source_path</key>
           <string>%pathname%/GPlates-2.2.0/%app_name%</string>
           <key>destination_path</key>
-          <string>%pkgroot%/Applications/%app_name%</string>
+          <string>%pkgroot%/Applications/GPlates-2.2.0/%app_name%</string>
         </dict>
+				<dict>
+					<key>source_path</key>
+					<string>%pathname%/GPlates-2.2.0/SampleData</string>
+					<key>destination_path</key>
+					<string>%pkgroot%/Applications/GPlates-2.2.0/SampleData</string>
+				</dict>
       </dict>
       <dict>
         <key>Processor</key>
