@@ -53,21 +53,10 @@
         <key>Arguments</key>
         <dict>
           <key>source_path</key>
-          <string>%pathname%/GPlates-2.2.0/%app_name%</string>
+          <string>%pathname%/GPlates-2.2.0</string>
           <key>destination_path</key>
-          <string>%pkgroot%/Applications/GPlates-2.2.0/%app_name%</string>
+          <string>%pkgroot%/Applications/GPlates-2.2.0</string>
         </dict>
-			<dict>
-				<key>Processor</key>
-				<string>Copier</string>
-				<key>Arguments</key>
-				<dict>
-					<key>source_path</key>
-					<string>%pathname%/GPlates-2.2.0/SampleData</string>
-					<key>destination_path</key>
-					<string>%pkgroot%/Applications/GPlates-2.2.0/SampleData</string>
-				</dict>
-			</dict>
       </dict>
       <dict>
         <key>Processor</key>
