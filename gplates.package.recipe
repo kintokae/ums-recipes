@@ -11,23 +11,23 @@
 		<key>app_name</key>
 		<string>gplates.app</string>
 	</dict>
-		<key>Process</key>
-    <array>
+	<key>Process</key>
+  <array>
+    <dict>
+      <key>Processor</key>
+        <string>URLDownloader</string>
+        <key>Arguments</key>
         <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>https://sourceforge.net/projects/gplates/files/gplates/2.2/GPlates-2.2.0-Darwin-x86_64.dmg/download</string>
-                <key>filename</key>
-                <string>GPlates-2.2.0-Darwin-x86_64.dmg</string>
-            </dict>
-          </dict>
+            <key>url</key>
+            <string>https://sourceforge.net/projects/gplates/files/gplates/2.2/GPlates-2.2.0-Darwin-x86_64.dmg/download</string>
+            <key>filename</key>
+            <string>GPlates-2.2.0-Darwin-x86_64.dmg</string>
+         </dict>
+    </dict>
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
-		</array>
-	</dict>
+	</array>
+</dict>
 </plist>
