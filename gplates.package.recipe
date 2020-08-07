@@ -13,7 +13,7 @@
 	</dict>
 	<key>Process</key>
   <array>
-    <dict>
+		<dict>
       <key>Processor</key>
         <string>URLDownloader</string>
         <key>Arguments</key>
@@ -22,12 +22,75 @@
             <string>https://sourceforge.net/projects/gplates/files/gplates/2.2/GPlates-2.2.0-Darwin-x86_64.dmg/download</string>
             <key>filename</key>
             <string>GPlates-2.2.0-Darwin-x86_64.dmg</string>
-         </dict>
-    </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
         </dict>
-	</array>
+    </dict>
+		<dict>
+				<key>Processor</key>
+				<string>PlistReader</string>
+				<key>Arguments</key>
+				<dict>
+						<key>info_path</key>
+						<string>%pathname/GPlates-2.2.0/%app_name%</string>
+				</dict>
+		</dict>
+		<dict>
+				<key>Processor</key>
+				<string>PkgRootCreator</string>
+				<key>Arguments</key>
+				<dict>
+						<key>pkgroot</key>
+						<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+						<key>pkgdirs</key>
+						<dict>
+								<key>Applications</key>
+								<string>0775</string>
+						</dict>
+				</dict>
+		</dict>
+		<dict>
+				<key>Processor</key>
+				<string>Copier</string>
+				<key>Arguments</key>
+				<dict>
+						<key>source_path</key>
+						<string>%pathname%/%app_name%</string>
+						<key>destination_path</key>
+						<string>%pkgroot%/Applications/%app_name%</string>
+				</dict>
+		</dict>
+		<dict>
+				<key>Processor</key>
+				<string>PkgCreator</string>
+				<key>Arguments</key>
+				<dict>
+						<key>pkg_request</key>
+						<dict>
+								<key>pkgname</key>
+								<string>%NAME%-%version%</string>
+								<key>version</key>
+								<string>%version%</string>
+								<key>id</key>
+								<string>%bundleid%</string>
+								<key>options</key>
+								<string>purge_ds_store</string>
+								<key>chown</key>
+								<array>
+										<dict>
+												<key>path</key>
+												<string>Applications</string>
+												<key>user</key>
+												<string>root</string>
+												<key>group</key>
+												<string>admin</string>
+										</dict>
+								</array>
+						</dict>
+				</dict>
+		</dict>
+		<dict>
+				<key>Processor</key>
+				<string>EndOfCheckPhase</string>
+		</dict>
+</array>
 </dict>
 </plist>
