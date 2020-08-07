@@ -23,15 +23,6 @@
                 <key>filename</key>
                 <string>GPlates-2.2.0-Darwin-x86_64.dmg</string>
             </dict>
-            <dict>
-              <key>Processor</key>
-              <string>PlistReader</string>
-              <key>Arguments</key>
-                <dict>
-                  <key>info_path</key>
-                    <string>%pathname%/GPlates-2.2.0/%app_name%</string>
-                </dict>
-            </dict>
           </dict>
         <dict>
             <key>Processor</key>
