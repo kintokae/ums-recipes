@@ -36,7 +36,7 @@
 						<key>Arguments</key>
 						<dict>
 								<key>info_path</key>
-								<string>%RECIPE_CACHE_DIR%/%NAME%/TeamViewer\ QuickSupport.app</string>
+								<string>%RECIPE_CACHE_DIR%/%NAME%/TeamViewer QuickSupport.app</string>
 						</dict>
         </dict>
         <dict>
