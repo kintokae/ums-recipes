@@ -36,7 +36,7 @@
 						<key>Arguments</key>
 						<dict>
 								<key>pattern</key>
-								<string>TeamViewer QuickSupport</string>
+								<string>TeamViewer\ QuickSupport</string>
 						</dict>
 				</dict>
 				<dict>
@@ -68,9 +68,9 @@
             <key>Arguments</key>
             <dict>
                 <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/TeamViewer\ QuickSupport</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%/TeamViewer\ QuickSupport.app</string>
                 <key>destination_path</key>
-                <string>%pkgroot%/Applications/TeamViewer\ QuickSupport</string>
+                <string>%pkgroot%/Applications/TeamViewer\ QuickSupport.app</string>
             </dict>
         </dict>
         <dict>
