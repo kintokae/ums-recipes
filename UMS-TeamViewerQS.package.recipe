@@ -7,7 +7,7 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>TeamViewer QuickSupport</string>
+		<string>TeamViewerQuickSupport</string>
 		<key>VERSION</key>
 		<string>latest</string>
 		<key>DOWNLOAD_URL</key>
@@ -31,12 +31,21 @@
             <string>Unarchiver</string>
         </dict>
 				<dict>
+						<key>Processor</key>
+						<string>FileFinder</string>
+						<key>Arguments</key>
+						<dict>
+								<key>pattern</key>
+								<string>TeamViewer QuickSupport</string>
+						</dict>
+				</dict>
+				<dict>
             <key>Processor</key>
             <string>PlistReader</string>
 						<key>Arguments</key>
 						<dict>
 								<key>info_path</key>
-								<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+								<string>found_filename</string>
 						</dict>
         </dict>
         <dict>
@@ -45,7 +54,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <string>%RECIPE_CACHE_DIR%/TeamViewer\ QuickSupport</string>
                 <key>pkgdirs</key>
                 <dict>
                     <key>Applications</key>
@@ -59,9 +68,9 @@
             <key>Arguments</key>
             <dict>
                 <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <string>%RECIPE_CACHE_DIR%/TeamViewer\ QuickSupport</string>
                 <key>destination_path</key>
-                <string>%pkgroot%/Applications/%NAME%</string>
+                <string>%pkgroot%/Applications/TeamViewer\ QuickSupport</string>
             </dict>
         </dict>
         <dict>
