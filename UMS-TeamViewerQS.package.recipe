@@ -31,21 +31,12 @@
             <string>Unarchiver</string>
         </dict>
 				<dict>
-						<key>Processor</key>
-						<string>FileFinder</string>
-						<key>Arguments</key>
-						<dict>
-								<key>pattern</key>
-								<string>TeamViewer\ QuickSupport.app</string>
-						</dict>
-				</dict>
-				<dict>
             <key>Processor</key>
             <string>PlistReader</string>
 						<key>Arguments</key>
 						<dict>
 								<key>info_path</key>
-								<string>found_filename</string>
+								<string>%RECIPE_CACHE_DIR%/%NAME%/TeamViewer\ QuickSupport.app</string>
 						</dict>
         </dict>
         <dict>
@@ -54,7 +45,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/TeamViewer\ QuickSupport</string>
+                <string>%RECIPE_CACHE_DIR%/TeamViewerQuickSupport</string>
                 <key>pkgdirs</key>
                 <dict>
                     <key>Applications</key>
@@ -70,7 +61,7 @@
                 <key>source_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%/TeamViewer\ QuickSupport.app</string>
                 <key>destination_path</key>
-                <string>%pkgroot%/Applications/TeamViewer\ QuickSupport.app</string>
+                <string>%pkgroot%/Applications/UMS\ Apps/TeamViewer\ QuickSupport.app</string>
             </dict>
         </dict>
         <dict>
