@@ -36,7 +36,7 @@
 						<key>Arguments</key>
 						<dict>
 								<key>pattern</key>
-								<string>TeamViewer\ QuickSupport</string>
+								<string>TeamViewer\ QuickSupport.app</string>
 						</dict>
 				</dict>
 				<dict>
